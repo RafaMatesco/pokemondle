@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  width: 100%;
+  height: 100vh; /* ou a altura que você quiser */
+  overflow: hidden;
+}
+
+.main img {
+  filter: blur(8px); /* 👈 Aplica o blur aqui */
+  object-fit:cover; /* pra imagem cobrir a div */
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+.main .pokemon_input{
+  position: relative;
+  bottom: 10%;
+
+  font-size: 30px;
+}
